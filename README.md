@@ -8,6 +8,8 @@
 
 Form requests for Lumen Micro Framework, ported from Laravel Framework.
 
+Support Lumen versions: 5.6+, 6.0+, 7.0+
+
 # Installation
 
 * Install as composer package
