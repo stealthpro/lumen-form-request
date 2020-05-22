@@ -1,0 +1,30 @@
+{
+    "name": "stealthpro/lumen-form-requests",
+    "description": "Form requests for Lumen Micro Framework, ported from Laravel Framework.",
+    "authors": [
+        {
+            "name": "Stealthpro",
+            "email": "av85.dev@gmail.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "lumen",
+        "api"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.1.3",
+        "laravel/lumen-framework": "5.6 - 5.8|^6.0|^7.0",
+        "illuminate/contracts": "5.6 - 5.8|^6.0|^7.0",
+        "illuminate/support": "5.6 - 5.8|^6.0|^7.0",
+        "illuminate/validation": "5.6 - 5.8|^6.0|^7.0",
+        "illuminate/http": "5.6 - 5.8|^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stealthpro\\LumenFormRequest\\": "src"
+        }
+    }
+}
