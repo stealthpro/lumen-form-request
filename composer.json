@@ -1,5 +1,5 @@
 {
-    "name": "stealthpro/lumen-form-requests",
+    "name": "stealthpro/lumen-form-request",
     "description": "Form requests for Lumen Micro Framework, ported from Laravel Framework.",
     "authors": [
         {
