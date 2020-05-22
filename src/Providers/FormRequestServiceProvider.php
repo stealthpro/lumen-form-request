@@ -3,6 +3,7 @@
 namespace Stealthpro\LumenFormRequest\Providers;
 
 use Stealthpro\LumenFormRequest\Http\FormRequest;
+use Stealthpro\LumenFormRequest\Console\Commands\MakeRequestCommand;
 use Laravel\Lumen\Http\Redirector;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Validation\ValidatesWhenResolved;
@@ -29,6 +30,12 @@ class FormRequestServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                MakeRequestCommand::class,
+            ]);
+        }
+		
         $this->app->afterResolving(ValidatesWhenResolved::class, function ($resolved) {
             $resolved->validateResolved();
         });
