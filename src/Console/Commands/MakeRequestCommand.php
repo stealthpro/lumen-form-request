@@ -4,7 +4,7 @@ namespace Stealthpro\LumenFormRequest\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 
-class RequestMakeCommand extends GeneratorCommand
+class MakeRequestCommand extends GeneratorCommand
 {
     /**
      * The console command name.

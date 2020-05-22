@@ -35,7 +35,7 @@ class FormRequestServiceProvider extends ServiceProvider
                 MakeRequestCommand::class,
             ]);
         }
-		
+
         $this->app->afterResolving(ValidatesWhenResolved::class, function ($resolved) {
             $resolved->validateResolved();
         });
